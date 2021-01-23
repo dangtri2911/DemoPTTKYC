@@ -7,8 +7,133 @@ body {
     font-size: 1rem;
 }
 
+.btn_num {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: fit-content;
+    display: block;
+    float: left;
+    width: 30px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn_num:nth-child(1) {
+    border-radius: 5px 0px 0px 5px;
+    border-right: 0px;
+}
+
+.btn_num:nth-last-child(1) {
+    border-radius: 0px 5px 5px 0px;
+    border-left: 0px;
+}
+
+.ip_num_contain {
+    display: block;
+    float: left;
+}
+
+.ip_num_contain>input {
+    width: 50px;
+    padding-left: 15px;
+}
+
+.show>.btn-secondary.dropdown-toggle {
+    background-color: hsl(0, 0%, 80%);
+    color: hsl(0, 0%, 19%);
+    border: 0.5px solid hsl(0, 0%, 90%)
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.btn-secondary {
+    background-color: hsl(0, 0%, 80%);
+    color: hsl(0, 0%, 19%);
+    border: 0.5px solid hsl(0, 0%, 90%)
+}
+
+.ip_num_contain,
+.ip_num_contain>input,
+.btn_num {
+    height: 30px;
+}
+
+.btn_tgvh {
+    text-align: center;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_tgvh:hover {
+    background-color: hsl(0, 100%, 40%);
+    color: hsl(0, 0%, 80%);
+}
+
+.order_table th {
+    font-size: x-large;
+    border-bottom: 1px solid gray;
+}
+
 .fas {
     font-size: xx-large;
+}
+
+.voucher_tag>div {
+    display: block;
+    float: left;
+    margin: 0px 10px;
+    border: 1.8px solid hsl(210, 100%, 70%);
+    padding: 5px 15px;
+    color: hsl(179, 100%, 38%);
+    border-radius: 5px;
+}
+
+.item_contain {
+    padding-bottom: 20px;
+    margin-bottom: 0.25em;
+}
+
+.voucher_tag>div:hover {
+    background-color: hsl(0, 0%, 92%);
+}
+
+.voucher_tag>div:nth-child(1) {
+    margin-left: 0;
+}
+
+.order_table td {
+    padding: 10px 5px;
+}
+
+.order_table table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.single_item {
+    border: 0.8 1px solid black;
+}
+
+.site_blocks_cover_single {
+    min-height: 300px !important;
+    max-height: 100vh !important;
+    height: 50vh !important;
 }
 
 ::-moz-selection {
